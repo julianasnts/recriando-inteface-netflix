@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,26 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/icone-netflix.ico">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="estilo/main.css">
-    <script src="https://kit.fontawesome.com/a832c7ed26.js" crossorigin="anonymous"></script>
+
+    <!--Incluindo os arquivos do carrossel-->
+    <link rel="stylesheet" href="estilo/carrossel/owl.carousel.min.css">
+    <link rel="stylesheet" href="estilo/carrossel/owl.theme.default.min.css">
+
+
+    <!--Incluindo css de responsividade do site-->
+    <link rel="stylesheet" href="estilo/responsive.css">
+
 </head>
+
 <body>
     <header>
         <div class="container">
             <img src="img/logo_netflix_2.png" alt='logo tipo Netflix completo' width="90px">
             <nav>
-                <a href="#">Inicio</a>
+                <a href="http://127.0.0.1:5500/index.html#">Inicio</a>
                 <a href="#">Animações</a>
-                <a href="#">Filmes</a>
-                <a href="#">Séries</a>
+                <a href="filmes.html">Filmes</a>
+                <a href="series.html">Séries</a>
                 <a href="#">Minha Lista</a>
             </nav>
         </div>
@@ -26,18 +36,140 @@
     <main>
         <div class="filme-principal">
             <div class="container">
-                <h3 class='titulo'>Cruella</h3>
-                <p class='sinopse'>Na Londres dos anos 70 em meio à revolução do punk rock, Estella, uma garota inteligente e criativa determinada a fazer um nome para si através de seus designs. Ela faz amizade com uma dupla de jovens ladrões e, juntos, constroem uma vida para si nas ruas de Londres. Um dia, o talento de Estella para a moda chama a atenção da Baronesa Von Hellman, uma lenda fashion que é devastadoramente chique e assustadora. Mas o relacionamento delas desencadeia um curso de eventos e revelações que farão com que Estella abrace seu lado rebelde e se torne a Cruella má, elegante e voltada para a vingança.</p>
+                <h3 class='titulo'>4 Mulheres e 1 Marido</h3>
+                <p class='sinopse'>A série mostra o cotidiano de Kody Brown e suas quatro esposas: Meri, Janelle,
+                    Christine e Robyn, que vivem como se fossem uma família convencional, em uma sociedade que condena a
+                    poligamia.</p>
+
+                <div class="botoes">
+                    <button role='button' class='botao' onclick="window.open('https://omundoonline.com/?s=4%20mulheres%20e%20um%20marido%20portugues', '_blank')">
+                        <i class="fas fa-play"></i> Assistir agora
+                    </button>
+                    <button role='button' class="botao">
+                        <i class="fas fa-info-circle"></i> Mais informações
+                    </button>
+                </div>
             </div>
-            <div class="botoes">
-            <button role='button' class='botao'>
-                <i class="fas fa-play"></i>    Assistir agora
-            </button>   
-            <button role='button' class='botao'>
-                <i class="fas fa-info-circle"></i>   Mais informações
-            </button>
-        </div>
         </div>
     </main>
+
+    <div class="rotulo">
+        Reality-shows:
+    </div>
+    <!--Construindo carrossel com o owl-->
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/90-dias-para-casar-antes-dos-90-dias.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/90-dias-para-casar.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/90-dias-para-casar-felizes-para-sempre.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/acumuladores-compulsivos.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/largados-e-pelados.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/poliamor.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/quilos-mortais.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/pequenos-johnsons.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/de-volta-ao-mundo-amish.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/mama-june-vida-nova.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="rotulo">
+        Especial Super-Heróis:
+    </div>
+    <!--Construindo carrossel com o owl-->
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/thor.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/viuva-negra.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/wanda-vision.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/liga-da-justica.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/homem-de-ferro.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/o-falcao-e-o-soldado.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/os-vingadores.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="rotulo">
+        Filmes de corrida eletrizantes:
+    </div>
+    <!--Construindo carrossel com o owl-->
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/velozes-e-furiosos-1.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/velozes-e-furiosos-2.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/velozes-e-furiosos-3.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/velozes-e-furiosos-4.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/velozes-e-furiosos-5.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/velozes-e-furiosos-6.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/velozes-e-furiosos-7.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/velozes-e-furiosos-8.jpg">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="img/capas filmes/velozes-e-furiosos-9.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            © desenvolvido por Juliana Santos
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a832c7ed26.js" crossorigin="anonymous"></script>
+    <script src="js/carrossel/jquery.min.js"></script>
+    <script src="js/carrossel/owl.carousel.min.js"></script>
+    <script src="js/carrossel/main.js"></script>
 </body>
+
 </html>
